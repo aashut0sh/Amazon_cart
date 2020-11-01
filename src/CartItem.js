@@ -2,16 +2,7 @@ import React from 'react';
 
 class CartItem extends React.Component{
 
-    constructor(){
-        super();
-        this.state={
-            price:999,
-            title:'Mobile Phone',
-            qty:1,
-            img: ''
-        }
-        // this.increaseQuantity=this.increaseQuantity.bind(this);
-    }
+    
     increaseQuantity =() =>{
         // console.log('thissss',this.state);
         //set state form 1 objrct form (when you dont need prev state)
@@ -37,11 +28,15 @@ class CartItem extends React.Component{
                 
             }
         })
-    }
+    };
 
-    // for this class to be React component
+    
+
+    
+
     render(){
-        const {price,title,qty}= this.state;
+        // console.log('this.prop',this.props);
+        const {price,title,qty}= this.props.product;
         // now this will return Jsx code
         return(
               <div className="cart-item">
