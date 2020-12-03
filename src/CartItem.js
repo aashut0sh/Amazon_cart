@@ -6,7 +6,7 @@ const CartItem = (props) => {
     return (
         <div className="cart-item">
             <div className="left-block">
-                <img style={styles.image} src={props.product.img} />
+                <img style={styles.image} src={props.product.img} alt="Product" />
             </div>
             <div className="right-block">
                 <div style={{ fontSize: 25 }}> {title}  </div>
@@ -22,7 +22,7 @@ const CartItem = (props) => {
                     <img
                         alt="decrease"
                         className="action-icons"
-                        src="https://www.flaticon.com/premium-icon/icons/svg/2920/2920674.svg"
+                        src="https://www.flaticon.com/svg/vstatic/svg/1828/1828899.svg?token=exp=1606994959~hmac=da8904b32b1b26ec3d990f7f44f6af83"
                         onClick={() => props.onDecrease(props.product)}
                     />
                     <img

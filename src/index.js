@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+import firebase from 'firebase/app'
+import 'firebase/firestore';
+
+// Your web app's Firebase configuration
+
+//Please write your FIREBASE configurations here
+
+ReactDOM.render(<App />,document.getElementById('root')
 );
 
